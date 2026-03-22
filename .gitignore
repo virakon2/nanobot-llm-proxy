@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Keys and configs
+keys_store*.json
+proxy_config.json
+
+# Test output
+test_out.txt
