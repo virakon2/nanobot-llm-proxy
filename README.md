@@ -32,4 +32,6 @@ Para utilizar este proxy rotador dentro de **Nanobot**, necesitas modificar tu a
 }
 ```
 
+> **Nota importante sobre el campo `"model"`:** Aunque este proxy sobrescriba el modelo final (si usas OpenRouter o Nvidia), es **obligatorio** tener definido un `"model"` válido (ej. `"model": "gemini/gemini-2.5-flash"`) dentro de tu bloque `"defaults"` o en la configuración de la clave en el `config.json`. La librería interna de Nanobot exige este parámetro para arrancar la petición con éxito antes de delegarla al proxy.
+
 3. Reinicia Nanobot para que reconozca los cambios y empiece a rutear las peticiones por medio del rotador de claves.
